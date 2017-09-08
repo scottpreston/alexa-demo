@@ -35,3 +35,5 @@ This is a short tutorial on the basics of Alexa and AWS.
 2. Add slots to your utterances and use those slots to branch in your Lambda function.
 3. Have your Lambda function make a REST call to get information.
 
+For more demos try this link: [https://github.com/alexa/alexa-cookbook](https://github.com/alexa/alexa-cookbook)
+
