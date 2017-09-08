@@ -4,7 +4,7 @@ This is a simple Alexa Demo for use in workshops and lunch & learns.
 
 # Getting Started
 
-This is a short tutorial on the basics of Alexa and AWS.
+This is a short tutorial on the basics of Alexa and AWS. Make sure to install NodeJS before you start.
 
 ## Upload Lambda Function:
 
