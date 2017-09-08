@@ -1,6 +1,6 @@
-# alexa-demo
+# Alexa-Demo
 
-This is a simple Alexa Demo.
+This is a simple Alexa Demo for use in workshops and lunch & learns.
 
 # Getting Started
 
@@ -13,8 +13,9 @@ This is a short tutorial on the basics of Alexa and AWS.
 3. Create a lambda function via the AWS interface
 4. Select  `Alexa Skills Kit` as your Lambda trigger.
 5. Upload your zip file.
-6. Create function.
-7. Copy your ARN (Lambda Name), you will need this later.
+6. Don't forget to add a role for your Lambda function with the template "Basic Edge Lambda Permissions".
+7. Create function.
+8. Copy your ARN (Lambda Name), you will need this later.
 
 ## AWS Developer
 
