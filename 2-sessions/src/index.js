@@ -11,26 +11,22 @@ module.exports.iccdemo = function(event, context, callback) {
 
 const handlers = {
     'LaunchRequest': function () {
-        var self = this;
+        var self = this; // use this to reference in request callback
         this.attributes['hero'] = '';
         this.attributes['firstName'] = '';
-        var amznProfileURL = 'https://api.amazon.com/user/profile?access_token=';
+        let amznProfileURL = 'https://api.amazon.com/user/profile?access_token=';
         amznProfileURL += this.event.session.user.accessToken;
-        
         request(amznProfileURL, function(error, response, body) {
-            var profile = JSON.parse(body);
-            var firstName = profile.name.split(" ")[0];
-            var speechOutput = "Hi, " + firstName + ". What would you like to know?";
+            let profile = JSON.parse(body);
+            let firstName = profile.name.split(" ")[0];
+            let speechOutput = "Hi, " + firstName + ". What would you like to know?";
             self.response.speak(speechOutput).listen(speechOutput);
             self.emit(':responseReady');
         });
     },
     'MyIntent': function () {
-        let hero = this.event.request.intent.slots['Hero'].value;
-        hero = hero.toString().toLowerCase();
-        let command = this.event.request.intent.slots['Command'].value;
-        command = command.toString().toLowerCase();
-        console.log(command,hero);
+        let hero = this.event.request.intent.slots['Hero'].value.toString().toLowerCase();
+        let command = this.event.request.intent.slots['Command'].value.toString().toLowerCase();
         let outText = '';
         if (command === "am i" &&  hero === 'worthy') {
             this.response.speak("if you can wield the hammer, you are worthy.");       
