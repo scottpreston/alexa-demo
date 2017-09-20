@@ -1,0 +1,4 @@
+MyIntent {Command} {Hero}
+MyIntent {Hero} {Ability}
+MyIntent What is {Hero} {Ability}
+MyIntent {Hero}

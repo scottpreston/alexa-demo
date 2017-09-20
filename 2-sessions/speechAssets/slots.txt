@@ -1,0 +1,26 @@
+LIST_OF_HEROS
+
+thor
+iron man
+hulk
+hawkeye
+black window
+captain america
+worthy
+
+LIST_OF_ABILITIES
+
+intelligence
+strength
+power
+speed
+durability
+energy 
+fighting 
+
+LIST_OF_COMMANDS
+
+tell me
+am i
+who is
+what is

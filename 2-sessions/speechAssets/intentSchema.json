@@ -1,0 +1,30 @@
+{
+    "intents": [
+      {
+        "slots": [
+          {
+            "name": "Command",
+            "type": "LIST_OF_COMMANDS"
+          },
+          {
+            "name": "Hero",
+            "type": "LIST_OF_HEROS"
+          },
+          {
+            "name": "Ability",
+            "type": "LIST_OF_ABILITIES"
+          }
+        ],
+        "intent": "MyIntent"
+      },
+      {
+        "intent": "AMAZON.HelpIntent"
+      },
+      {
+        "intent": "AMAZON.StopIntent"
+      },
+      {
+        "intent": "AMAZON.CancelIntent"
+      }
+    ]
+  }
